@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Currículum</title>
+    <style>
+        body {
+            padding: 0px 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header, footer {
+            text-align: center;
+        }
+        span {
+            color: darkblue;
+        }
+        section, main {
+            border-bottom: 0.5px solid black;
+        }
+        nav a {
+            padding-right: 10px;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        .profile-pic {
+            width: 100px; 
+            height: 100px;
+        }
+        .graduated, .gpa {
+            float: left;
+        }
+        .graduated {
+            padding-right: 65%;
+        }
+        .work-experience{
+            clear: both;
+        }
+        .education {
+            overflow: auto;
+        }
+    </style>
+
 </head>
 <body>
-    <header style="text-align: center;">
+    <header>
         <h1>Alan Zavala</h1>
         <address>
             98101 Mexico City, Coyoacán <br>
@@ -17,15 +55,15 @@
         <h2>Objective</h2>
         A management position in a leading technology company
     </main>
-    <section>
+    <section class="education">
         <h2>Education</h2>
         <div>
             <h3>Instituto Tecnológico de Estudios Superiores de Monterrey (ITESM CCM)</h3>
-            <p>Graduating in December 2021</p>
-            <p>GPA 93/100</p>
+            <p class="graduated">Graduating in December 2021</p>
+            <p class="gpa">GPA 93/100</p>
         </div>
     </section>
-    <section>
+    <section class="work-experience">
         <h2>Working Experience</h2>
         <div>
             <h3>Software Engineer Intern in Egade Business School.</h3>
@@ -75,16 +113,16 @@
     </section>
     <section>
         <h2>Interests</h2>
-        <p><span style="color:blue;">Web</span> development, play football, play the guitar, finance and <span style="color:blue;">investments</span></p>
+        <p><span >Web</span> development, play football, play the guitar, finance and <span>investments</span></p>
     </section>
     <h3>Profiles and portfolio</h2>
     <nav>
-        <img src="imgs/alan.jpg" alt="profilePicture" style="width: 100px; height: 100px"><br>
+        <img src="imgs/alan.jpg" alt="profilePicture" class="profile-pic"><br>
         <a href="https://www.linkedin.com/in/alan-omar-zavala-l%C3%A9varo-007529189/">Linkedin</a>
         <a href="https://github.com/AlanZavala?tab=repositories">Github</a>
         <a href="https://www.occ.com.mx/curriculo">OCC</a>
     </nav>
-    <footer style="text-align: center;">
+    <footer>
         <p>Alan Omar Zavala Lévaro | 5548552088</p>
     </footer>
 </body>
